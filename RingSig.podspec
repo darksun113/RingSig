@@ -20,4 +20,9 @@ The library implements a ring signature scheme in Swift. The algorithm is based 
   s.osx.deployment_target = '10.12'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '3.0'
+  
+  s.test_spec 'Tests' do |test_spec|
+    test_spec.source_files = 'Tests/*'
+    test_spec.dependency 'BigInt' # This dependency will only be linked with your tests.
+  end
 end
