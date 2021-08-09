@@ -22,7 +22,7 @@ The library implements a ring signature scheme in Swift. The algorithm is based 
   s.watchos.deployment_target = '3.0'
   
   s.test_spec 'Tests' do |test_spec|
-    test_spec.source_files = 'Tests/*'
+    test_spec.source_files = 'Tests/RingSigTest/*'
     test_spec.dependency 'BigInt' # This dependency will only be linked with your tests.
   end
 end
